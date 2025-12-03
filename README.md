@@ -5,6 +5,7 @@ WIM is a [Vim](https://www.vim.org) clone but simple... yup... that's it
 BTW I am writing this in WIM, yup
 
 Keys(you can find this by typing help in the command prompt(in WIM)):
+```
 j - move cursor up
 k - move cursor down
 h - move cursor left
@@ -23,6 +24,7 @@ i - insert
 a - append
 ESC - normal
 > - open command prompt, only in normal mode
+```
 
 ---
 Made with love
