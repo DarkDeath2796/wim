@@ -27,4 +27,13 @@ ESC - normal
 ```
 
 ---
+# Usage:  
+1. Download the latest [release](https://github.com/DarkDeath2796/wim/releases)  
+2. Put the executable into some folder  
+3. Add that folder to PATH  
+Done!
+
+Run: `wim <filename> or nothing`
+
+---
 Made with love
