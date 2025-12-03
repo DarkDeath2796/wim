@@ -1,0 +1,8 @@
+%> list all files in a dir
+fn list_files(strT dir) strvec
+	strvec files = {};
+	foreach entry fs::directory_iterator(dir)
+		files.push_back(entry.path().string())
+	end
+	return files
+end

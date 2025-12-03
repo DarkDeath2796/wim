@@ -1,0 +1,39 @@
+#include <string>
+#include <conio.h>
+#include <stdio.h>
+
+
+fn ctrl_key(char c) char
+    return c & 0x1f
+end
+
+
+fn get_key() char
+    char c = _getch();
+
+    if c == '\r'
+        c = '\n'
+    end
+
+    return c
+end
+
+fn input_pwd(strT prompt) strT
+    strT pwd = ""
+    char c
+    while (c = get_key()) != '\n'
+        if c == '\b'
+            if pwd.length() > 0
+                pwd = pwd.substr(0, pwd.length() - 1)
+            end
+        else
+            pwd += c
+        end
+        print(prompt)
+        repeat pwd.length()
+            print("*")
+        end
+        print("\r")
+    end
+    return pwd
+end
