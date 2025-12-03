@@ -249,7 +249,7 @@ fn handle_keybindings(strT& file, pos& cursor, char c, strvec& copy_buffer, int&
         cursor = matches[idx - 1]
     end
 
-    if c == 'h'
+    if c == 'g'
         strT replace = ""
 
         print("\x1b[", rows - 1, ";1H")
