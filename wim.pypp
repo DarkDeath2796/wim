@@ -83,6 +83,8 @@ fn delete_word(strT& file, pos& cursor)
         start--
     end
 
+    start -= 1
+
     while end < line.length() && line[end] != ' '
         end++
     end
@@ -225,6 +227,11 @@ fn handle_keybindings(strT& file, pos& cursor, char c, strvec& copy_buffer, int&
                 matches.push_back({lines[i].find(search), i})
             end
         }
+
+        if matches.size() == 1
+            cursor = matches[0]
+            return
+        end
 
         print("\x1b[", rows - (matches.size() + 1), ";1H")
 
