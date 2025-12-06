@@ -1,3 +1,9 @@
+# NO MORE UPDATES WILL BE RELEASED BECAUSE DEPRECATED
+
+
+
+
+
 # Windows Interactive (file) Modifier (WIM)
 
 WIM is a [Vim](https://www.vim.org) clone but simple... yup... that's it
